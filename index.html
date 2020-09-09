@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>NVchat</title>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 5px;
+            height: 10px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: white;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        #chat-box {
+            overflow-y: scroll;
+        }
+
+        .card-content {
+            height: 365px;
+        }
+
+        #dis01 {
+            -webkit-box-sizing: content-box;
+            -moz-box-sizing: content-box;
+            box-sizing: content-box;
+        }
+
+        /* 
+        .msg {
+            align-items: left;
+            display: flex;
+            flex-direction: column;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <h1 class="blue-text center" style="margin-top: 0px;">Our first chat system</h1> -->
+    <!-- <div class="row"> -->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m7 l12 z-depth-0">
+                <div class="card" style="height: 580px;">
+                    <ul class="collection">
+                        <li class="collection-item avatar">
+                            <img src="images/s2.jpg" alt="" class="circle resonsive-img">
+                            <span class="title" style="line-height: 35px;padding-left: 72px;"><b>Selena</b></span>
+                            <!-- <div class="input-field"> -->
+                            <!-- <input placeholder=" Type a message" id="dis01"
+                                style="border-radius: 20px;width: 100px;padding-left: 40%;" type="text"> -->
+                            <!-- </div> -->
+                            <a href="#!" class="secondary-content"><i class="material-icons"
+                                    style="line-height: 20px;padding-top: 0px;">more_vert</i></a>
+                        </li>
+                    </ul>
+                    <div class="card-content" id="chat-box">
+                        <div class="row">
+                            <div class="col s12 l12 m12 left ">
+                                <div class="col l5 " style="height: 50px;">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of
+                                                information.
+                                                I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col s12 l12 m12">
+                                <div class="col l3 right">
+                                    <div class="card">
+                                        <div class="card-content">
+                                            <p>I am a very simple card. I am good at containing small bits of
+                                                information.
+                                                I am convenient because I require little markup to use effectively.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- <p style="display: block;">IHi i'm here Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Quaerat iuriatur quia id
+                            voluptatem doloremque facilis molestiae earum?
+                        </p> -->
+                    </div>
+                    <!-- <div class="row"> -->
+                    <div>
+                        <ul class="collection">
+                            <li class="collection-item avatar">
+                                <div class="input-field">
+                                    <i class="material-icons prefix">mood</i>
+                                    <input placeholder=" Type a message" id="icon_prefix"
+                                        style="border-radius: 20px;width: 90%;" type="text">
+                                </div>
+                                <a href="#!" class="secondary-content"><i class="material-icons">send</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
+    <script src="materialize/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(
+            function () {
+                $(".container").height("700px");
+
+            }
+        )
+    </script>
+</body>
+
+</html>
